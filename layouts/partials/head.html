@@ -1,0 +1,35 @@
+<head>
+
+   <!-- Meta tag super SEO -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <title>{{ .Title }}</title>
+   {{ if .Description }}
+   <meta content="{{ .Description }}" name="description" />
+   {{ else }}
+   <meta content="{{ .Site.Params.Description }}" name="description" />
+   {{ end }}
+   <meta content="Alirtech,Komunitas belajar dan sharing" name="keywords" />
+   <link rel="canonical" href="https://alirtech.com" />
+   <meta property="og:locale" content="en_US" />
+   <meta property="og:title" content="Alirtech" />
+   <meta property="og:type" content="Website" />
+   <meta property="og:url" content="https://alirtech.com" />
+   <meta property="og:site_name" content="Alirtech" />
+   <meta property="og:image" content="/img/{{ .Params.featured_image }}" />
+   <meta name="google-site-verification" content="#" />
+
+   <!-- Meta color -->
+   <meta name="theme-color" content="#388794">
+   <meta name="msapplication-TileColor" content="#388794">
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="/assets/img/logoalir.png">
+    
+    <link href="/assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/assets/css/themify-icons.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
